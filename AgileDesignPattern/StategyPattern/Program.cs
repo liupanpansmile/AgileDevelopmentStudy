@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using StategyPattern.Strategy;
+using StrategyPattern.Strategy;
 
-namespace StategyPattern
+namespace StrategyPattern
 {
     class Program
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StategyPattern.Strategy
+namespace StrategyPattern.Strategy
 {
     /// <summary>
     /// Quick Sort
