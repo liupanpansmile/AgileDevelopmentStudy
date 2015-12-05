@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,20 +9,19 @@ namespace SingletonPattern.Src
 {
     public class Agent : IAgent
     {
-        private static IAgent _agent;
-
+        private static readonly Singleton _singleton = new Singleton();
         private Agent()
         {
 
         }
-        public static IAgent CreateInstance()
+
+        public static IAgent Instance
         {
-            if (null == _agent)
+            get
             {
-                _agent = new Agent();
+                return _singleton.CreateInstance();
             }
-            return _agent;
-        }
+        } 
 
         public void Start()
         {
@@ -36,6 +36,15 @@ namespace SingletonPattern.Src
         public void ShutDown()
         {
             throw new NotImplementedException();
+        }
+
+        internal class Singleton
+        {
+            private static IAgent _agent;
+            public IAgent CreateInstance()
+            {
+                return _agent ?? (_agent = new Agent());
+            }
         }
     }
 }

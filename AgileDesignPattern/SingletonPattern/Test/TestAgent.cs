@@ -14,8 +14,8 @@ namespace SingletonPattern.Test
         [Test]
         public void TestUnique()
         {
-            var agent = Agent.CreateInstance(); 
-            var agent2 = Agent.CreateInstance();
+            var agent = Agent.Instance;
+            var agent2 = Agent.Instance;
             Assert.AreEqual(agent, agent2);
         }
     }
