@@ -1,11 +1,26 @@
+using System.Collections.Generic;
+
 namespace ObserverPattern
 {
     class MockTimeSource : ITimeSource
     {
-        public IClockObserver ClockObserver { get; set; }
+        private List<IClockObserver> _observerList;
+
+        public MockTimeSource()
+        {
+            _observerList = new List<IClockObserver>();
+        }
+        public void RegisterObserver(IClockObserver observer)
+        {
+            _observerList.Add(observer);
+        }
+
         public void SetTime(int hours, int minutes, int seconds)
         {
-            ClockObserver.Update(hours,minutes,seconds);
+            foreach (var o in _observerList)
+            {
+                o.Update(hours, minutes, seconds);
+            }
         }
     }
 }

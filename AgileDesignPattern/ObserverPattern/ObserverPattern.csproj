@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IClockObserver.cs" />
-    <Compile Include="ITimeSink.cs" />
     <Compile Include="ITimeSource.cs" />
     <Compile Include="MockTimeSink.cs" />
     <Compile Include="MockTimeSource.cs" />
