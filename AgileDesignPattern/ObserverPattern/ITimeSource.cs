@@ -2,7 +2,7 @@
 {
     interface ITimeSource
     {
-        ClockDriver ClockDriver { get; set; }
+        IClockObserver ClockObserver { get; set; }
         void SetTime(int hours, int minutes, int seconds);
     }
 }

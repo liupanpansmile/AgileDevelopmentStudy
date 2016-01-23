@@ -1,5 +1,10 @@
 ﻿namespace ObserverPattern
 {
+    interface IClockObserver
+    {
+        void Update(int hours, int minutes, int seconds);
+    }
+
     class ClockDriver :IClockObserver
     {
         public ITimeSource TimeSource { get; set; }
@@ -16,4 +21,5 @@
             TimeSink.SetTime(hours, minutes, seconds);
         }
     }
+    
 }

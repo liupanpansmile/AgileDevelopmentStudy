@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClockDriver.cs" />
+    <Compile Include="IClockObserver.cs" />
     <Compile Include="ITimeSink.cs" />
     <Compile Include="ITimeSource.cs" />
     <Compile Include="MockTimeSink.cs" />

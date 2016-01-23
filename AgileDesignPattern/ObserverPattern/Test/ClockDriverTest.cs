@@ -10,7 +10,7 @@ namespace ObserverPattern.Test
         {
             var source = new MockTimeSource() ;
             var sink = new MockTimeSink();
-            var clockDriver = new ClockDriver(source, sink);
+            var clockDriver = new ClockObserver(source, sink);
 
             int hours = 1;
             int minutes = 2;
