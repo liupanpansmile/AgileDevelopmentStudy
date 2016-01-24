@@ -7,6 +7,7 @@ namespace ObserverPattern.MessagePull
     {
         private MockTimeSink _timeSink;
         private MockTimeSource _timeSource;
+
         [SetUp]
         public void SetUp()
         {

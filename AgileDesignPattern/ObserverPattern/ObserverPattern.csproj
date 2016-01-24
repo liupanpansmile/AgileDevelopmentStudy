@@ -50,14 +50,14 @@
     <Compile Include="MessagePull\MockTimeSource.cs" />
     <Compile Include="MessagePull\ObserverPullTest.cs" />
     <Compile Include="MessagePull\Subject.cs" />
-    <Compile Include="PushMessage\IClockObserver.cs" />
-    <Compile Include="PushMessage\ITimeSource.cs" />
-    <Compile Include="PushMessage\MockTimeSink.cs" />
-    <Compile Include="PushMessage\MockTimeSource.cs" />
-    <Compile Include="PushMessage\Program.cs" />
+    <Compile Include="MessagePush\IClockObserver.cs" />
+    <Compile Include="MessagePush\ITimeSource.cs" />
+    <Compile Include="MessagePush\MockTimeSink.cs" />
+    <Compile Include="MessagePush\MockTimeSource.cs" />
+    <Compile Include="MessagePush\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PushMessage\Test\ClockDriverTest.cs" />
-    <Compile Include="PushMessage\TimeSourceImpl.cs" />
+    <Compile Include="MessagePush\Test\ClockDriverTest.cs" />
+    <Compile Include="MessagePush\TimeSourceImpl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

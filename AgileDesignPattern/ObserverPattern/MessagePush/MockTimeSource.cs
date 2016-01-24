@@ -1,4 +1,6 @@
-namespace ObserverPattern.PushMessage
+using ObserverPattern.PushMessage;
+
+namespace ObserverPattern.MessagePush
 {
     /*
      * 这个设计很丑陋，但是如果C#不能多继承，如果城建ObservableClock，他就可以继承Clock

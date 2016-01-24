@@ -1,4 +1,4 @@
-﻿namespace ObserverPattern.PushMessage
+﻿namespace ObserverPattern.MessagePush
 {
     interface ITimeSource
     {

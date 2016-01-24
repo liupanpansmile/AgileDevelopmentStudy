@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ObserverPattern.PushMessage
+namespace ObserverPattern.MessagePush
 {
     class TimeSourceImpl
     {
