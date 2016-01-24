@@ -1,4 +1,4 @@
-namespace ObserverPattern
+namespace ObserverPattern.PushMessage
 {
     class MockTimeSink : IClockObserver
     {

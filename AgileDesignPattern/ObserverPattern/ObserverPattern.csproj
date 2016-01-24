@@ -44,14 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IClockObserver.cs" />
-    <Compile Include="ITimeSource.cs" />
-    <Compile Include="MockTimeSink.cs" />
-    <Compile Include="MockTimeSource.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MessagePull\ITimeObserver.cs" />
+    <Compile Include="MessagePull\ITimeSource.cs" />
+    <Compile Include="MessagePull\MockTimeSink.cs" />
+    <Compile Include="MessagePull\MockTimeSource.cs" />
+    <Compile Include="MessagePull\ObserverPullTest.cs" />
+    <Compile Include="MessagePull\Subject.cs" />
+    <Compile Include="PushMessage\IClockObserver.cs" />
+    <Compile Include="PushMessage\ITimeSource.cs" />
+    <Compile Include="PushMessage\MockTimeSink.cs" />
+    <Compile Include="PushMessage\MockTimeSource.cs" />
+    <Compile Include="PushMessage\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Test\ClockDriverTest.cs" />
-    <Compile Include="TimeSourceImpl.cs" />
+    <Compile Include="PushMessage\Test\ClockDriverTest.cs" />
+    <Compile Include="PushMessage\TimeSourceImpl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

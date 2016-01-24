@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace ObserverPattern.Test
+namespace ObserverPattern.PushMessage.Test
 {
     [TestFixture]
     class ClockDriverTest
